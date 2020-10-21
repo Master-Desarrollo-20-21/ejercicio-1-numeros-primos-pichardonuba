@@ -1,4 +1,4 @@
-public class numberPrime {
+public class primeNumber {
 	
 	public static boolean isPrime(int number) {
 		for(int i = 2; i < number; i++) {
