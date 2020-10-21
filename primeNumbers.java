@@ -12,9 +12,9 @@ public class primeNumber {
 		return true;
 	}
 	
-	public static int sumPrimeNumber(int limitNumnber) {
+	public static int sumPrimeNumberUntil(int limitNumber) {
 		int sum = 0;
-		for(int i = 0; i < limitNumnber; i++) {
+		for(int i = 0; i < limitNumber; i++) {
 			if(isPrime(i)) {
 				sum += i;
 			}
@@ -22,11 +22,11 @@ public class primeNumber {
 		return sum;
 	}
 	
-	public static int sumPrimeNumberAndNoPrimeNumber(int limitNumnber) {
+	public static int sumPrimeNumberCount(int limitNumber) {
 		int count = 0;
 		int i = 0;
 		int sum = 0;
-		while(limitNumnber >= count) {
+		while(limitNumber >= count) {
 			if(isPrime(i)) {
 				sum += i;
 				count++;
@@ -37,8 +37,8 @@ public class primeNumber {
 	}
 	
 	public static void main(String[] args) {
-		System.out.println(sumPrimeNumber(50));
-		System.out.println(sumPrimeNumberAndNoPrimeNumber(50));
+		System.out.println(sumPrimeNumberUntil(50));
+		System.out.println(sumPrimeNumberCount(50));
 	}
   
 }
